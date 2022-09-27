@@ -11,23 +11,25 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-4">Movie Song Recommendations</h1>
+          <p class="lead">This allows the user to look up a movie and find songs that were used in the movie, as well as showing other songs that the artists is popular for.</p>
         </div>
       </div>
-    <div class = "container2 hide">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Morbius</a>
-          <a class="dropdown-item" href="#">Frozen</a>
-          <a class="dropdown-item" href="#">Transformers</a>
+      <form id="displaycontainer2" class="container2 hide" > 
+        <div id= "dropdownchoices' class="form-group">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Morbius</option>
+            <option>Frozen</option>
+            <option>Transformers</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
+      </form>   
       </div>
-    <div class = "container3 hide"> 
-      <div class="card " style="width: 18rem;">
+      </div>
+    <div class = "container3 hide" id = "displaycontainer3"> 
+      <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -43,12 +45,13 @@
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
-      <div class="card " style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
+      <div>  
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Cras justo odio</li>
           <li class="list-group-item">Dapibus ac facilisis in</li>
