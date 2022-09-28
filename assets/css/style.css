@@ -1,6 +1,12 @@
-/* defines text & spacing formatting for my specific header */
+/* defines formatting as default */
 * {
     background-color: black;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+/* formatting for header container */
+.headercontainer {
+    position:relative;
 }
 
 h1 {
@@ -13,12 +19,6 @@ h1 {
     margin-top: 10px;
 }
 
-/* Defines header as relative to enable overlap text with sub-header*/
-.headercontainer {
-    position:relative;
-}
-
-/* defines image formatting, enabling changes when page is resized*/
 .mainimage {
     height: auto;
     width: 100%;
@@ -40,19 +40,19 @@ h2 {
     display: none;
 }
 
+/* text formatting for header area */
+.spacing {
+    margin: 10px 0px 0px 0px;
+    height: 100px;
+    border-top: 10px;
+}
+
 .start-here {
     font-family: 'Bebas Neue', cursive;
     font-size: 100px;
     color: white;
     text-align: center;
     margin: 0px;
-}
-
-.spacing {
-    margin: 10px 0px 0px 0px;
-    height: 100px;
-    border-top: 10px;
-    border-color:white;
 }
 
 .form-control {
@@ -68,3 +68,60 @@ h2 {
     padding-top: 30px;
 }
 
+/* formatting for the cards */
+.history-text-artist {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    color: lightgray;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.history-text-song {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 75%;
+    color: lightgray;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+/* media screen adjustemnt for screen resizing */
+@media screen and (max-width: 1700px) {
+    h2 {
+        top:60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 10px;
+        top:100%;
+        left: 0%;
+        background-color: black;
+        color:white;
+    }
+
+    .start-here {
+        font-size: 50px;
+    }
+
+    .spacing {
+        height: 40px;
+    }
+}
