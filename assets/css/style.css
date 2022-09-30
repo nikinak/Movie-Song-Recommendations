@@ -87,6 +87,10 @@ h2 {
     font-family: 'Inter Tight', sans-serif;
 }
 
+.list-group {
+    color: white;
+}
+
 /* media screen adjustemnt for screen resizing */
 @media screen and (max-width: 1700px) {
     h2 {
