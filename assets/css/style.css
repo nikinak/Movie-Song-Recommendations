@@ -1,12 +1,16 @@
 /* defines formatting as default */
 * {
-    background-color: black;
+    /* background-color: black; */
     font-family: 'Inter Tight', sans-serif;
 }
 
 /* formatting for header container */
 .headercontainer {
     position:relative;
+}
+
+.coloring {
+    background-color:black;
 }
 
 h1 {
@@ -45,6 +49,12 @@ h2 {
     margin: 10px 0px 0px 0px;
     height: 100px;
     border-top: 10px;
+    border-color: white;
+}
+
+.border-white {
+    height: 10px;
+    background-color: white;
 }
 
 .start-here {
@@ -90,6 +100,8 @@ h2 {
 .list-group {
     color: white;
 }
+
+
 
 /* media screen adjustemnt for screen resizing */
 @media screen and (max-width: 1700px) {
