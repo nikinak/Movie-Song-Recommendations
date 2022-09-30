@@ -13,6 +13,19 @@
     background-color:black;
 }
 
+.artist {
+    height: 150px;
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.lastartist {
+    display: flex;
+    color: white;
+    padding-right: 20px;
+}
+
 h1 {
     position: absolute;
     padding: 10px 10px 10px 20px ;
@@ -78,6 +91,23 @@ h2 {
     padding-top: 30px;
 }
 
+.card-title {
+    font-weight: bolder;
+}
+
+.inbetween {
+    background-color: black;
+    height: 2px;
+}
+
+.card-text {
+    font-weight: 40%;
+}
+
+.card {
+    border-color: red;
+    font-family: sans-serif;
+}
 /* formatting for the cards */
 .history-text-artist {
     display: inline-block;
