@@ -19,18 +19,19 @@ function getLyrics(songTitle) {
                 document.getElementById('lyrics-text').innerHTML = data.lyrics;
             };
         })
-	    .catch(function(error) {return console.error(error)})    
-
+	    .catch(function(error) {return console.error(error)})
 };
 
 
 // test for the above function
-getLyrics('Hey Jude')
+// getLyrics('Hey Jude')
 
+var track4Lyrics = document.getElementsByClassName('btnSong')
 
+track4Lyrics.addEventListener("click", getLyrics)
 
 
 // TODO's
-// set click event function that will start the getLyrics function when a song is selected from the the track-list class listed item and adds that song title to local storage
-// get lyrics to display in id="lyrics-text"
-// function to display songs and track on page
+// set click event function that will start the getLyrics function when a song is selected from the id='tracks' listed item and adds that song + artist title to local storage
+// (Complete) get lyrics to display in id="lyrics-text"
+// function to display songs and artist on page, recover data from local storeage
