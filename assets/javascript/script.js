@@ -16,10 +16,17 @@ function funcContainer3(event) {
     newheader.classList.remove('hide')
     dropdownhide.classList.add('hide')
     startheader.classList.add('hide')
-    showArtists(artistSelected)
+    showArtists(artistSelected) // Unused code below
 
+    if (artistSelected == 'Adele') {
+        var artistId = '4dpARuHxo51G3z768sgnrY';
+    } else if (artistSelected == 'Beatles') {
+        var artistId = '3WrFJ7ztbogyGnTHbHJFl2';
+    } else {
+        var artistId = '5pKCCKE2ajJHZ9KAiaK11H'; // Rhianna Spotify ID
+    }
 
-    var artistId = '5pKCCKE2ajJHZ9KAiaK11H';
+    // var artistId = '5pKCCKE2ajJHZ9KAiaK11H'
     var querySongs = 'https://spotify81.p.rapidapi.com/artist_singles?id=' + artistId
 
     // --- Fetch artist songs & create a button to select the song
