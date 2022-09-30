@@ -20,8 +20,12 @@ function funcContainer3(event) {
 
     if (artistSelected == 'Adele') {
         var artistId = '4dpARuHxo51G3z768sgnrY';
-    } else if (artistSelected == 'Beatles') {
-        var artistId = '3WrFJ7ztbogyGnTHbHJFl2';
+    } else if (artistSelected == 'Bad Bunny') {
+        var artistId = '4q3ewBCX7sLwd24euuV69X';
+    } else if (artistSelected == 'Justin Bieber') {
+        var artistId = '1uNFoZAHBGtllmzznpCI3s';
+    } else if (artistSelected == 'Lizzo') {
+        var artistId = '56oDRnqbIiwx4mymNEv7dS';
     } else {
         var artistId = '5pKCCKE2ajJHZ9KAiaK11H'; // Rhianna Spotify ID
     }
@@ -63,6 +67,9 @@ function funcContainer3(event) {
         })
         .catch(err => console.error(err))
 
+    var lastArtistEl = $('#last-artist');
+    localStorage.setItem("lastArtist", artistSelected);
+    lastArtistEl.text(localStorage.getItem('lastArtist'));
 }
 
 function showArtists(artist) {
