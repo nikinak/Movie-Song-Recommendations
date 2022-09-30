@@ -18,14 +18,20 @@
         <img class="mainimage" src="./assets/Images/stock.png" alt="Photo of person in headphones" />
         <h2>Explore songs from your favorite arist and dig into the lyrics that bring their music alive</h2>
     </section>
-      <section>
+    <section>
       <p class = "border-white"></p>
+    </section> 
+      <section class="artist">
+        <p class="lastartist" >Your last searched artist: <span id="last-artist"> Insert Artist</span></p>
+        <p class = "lastartist">Your last searched song: <span> Insert Song</span></p>
+      </section>
+    <section>
       <p class = "spacing"></p>
       <p class="start-here" id="start-text">Begin your exploration</p>
       <p class="start-here hide" id="second-text">You are exploring: <span class ="artist-name"></span></p>
     </section>
       <form id="displaycontainer2" class="container2" > 
-        <div id= "dropdownchoices' class="form-group hide">
+        <div id= "dropdownchoices' class= "form-group hide">
           <select class="form-control" id="selectchoices">
             <option disabled selected>Choose an Artist</option>
             <option>Adele</option>
@@ -39,30 +45,27 @@
 
     <div class = "container3 hide row justify-content-around coloring" id = "displaycontainer3"> 
       <div class="card col-12 col-sm-6 col-lg-4 mb-3">
-        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Song List</h5>
           <p class="card-text">Here are the songs from this artist</p>
         </div>
+      <div class = "inbetween"></div>  
         <ul class="list-group list-group-flush" id="songs">
           <li class="list-group-item track-list"></li>
         </ul>
       </div>
       <div class="card col-12 col-sm-6 col-lg-4 mb-3">
-        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Lyrcis</h5>
           <p class="card-text">Here are the lyrics for the song you selected:</p>
         </div>
+      <div class = "inbetween"></div>
         <ul class="list-group list-group-flush">
-          <li id="lyrics-text" class="list-group-item"></li>
+          <li id="lyrics-text" class="list-group-item">PLACEHOLDER FOR LYRICS</li>
         </ul>
-      </div>   
+      </div>
     </div>
-    <section class="container-history">
-      <p class="history-text-artist">Your last searched artist: <span id="last-artist"></span></p>
-      <p class="history-text-song">Your last searched song: <span>INSERT SONG</span></p>
-    </section> 
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
