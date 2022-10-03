@@ -72,6 +72,7 @@ function funcContainer3(event) {
     lastArtistEl.text(localStorage.getItem('lastArtist'));
 }
 
+
 function showArtists(artist) {
 
 }

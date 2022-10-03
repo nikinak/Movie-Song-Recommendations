@@ -24,11 +24,26 @@ function getLyrics(songTitle) {
 
 
 // test for the above function
-// getLyrics('Hey Jude')
+// getLyrics('Something')
 
-var track4Lyrics = document.getElementsByClassName('btnSong')
 
-track4Lyrics.addEventListener("click", getLyrics)
+var songButton = document.getElementsByTagName('button')
+console.log(songButton)
+var songChoice = document.getElementsByTagName('button')
+console.log(songChoice)
+var songList = document.getElementById('songs')
+console.log(songList)
+// for (var i = 0; i < songChoice.length; i++) {
+//     var song = songChoice.HTMLCollection[i].button[i]
+//     console.log(song)
+// }
+
+songList.addEventListener("click", getLyrics('Something'))
+
+
+    
+
+
 
 
 // TODO's
