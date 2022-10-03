@@ -7,6 +7,8 @@ var selectEl = document.getElementById('selectchoices')
 dropdownhide.classList.remove('hide')
 selectEl.addEventListener('change', funcContainer3)
 
+var songList = $('#songs')
+
 var lastArtistEl = $('#last-artist');
 lastArtistEl.text(localStorage.getItem('lastArtist'));
 
@@ -37,7 +39,7 @@ function funcContainer3(event) {
 
     // --- Fetch artist songs & create a button to select the song
     // ID=songs from index.html
-    var songList = $('#songs')
+    // var songList = $('#songs')
 
     const options = {
         method: 'GET',
@@ -47,24 +49,24 @@ function funcContainer3(event) {
         }
     };
 
+
+
     fetch(querySongs, options)
         .then(response => response.json())
         .then(function(data) {
-            console.log(data) 
-            console.log(data.data.artist.discography.singles.items[1].releases.items[0].name)
-            console.log(data.data.artist.discography.singles.items[6].releases.items[0].name)
-            console.log(data.data.artist.discography.singles.items.length)
+            // console.log(data) 
+            // console.log(data.data.artist.discography.singles.items[1].releases.items[0].name)
+            // console.log(data.data.artist.discography.singles.items[6].releases.items[0].name)
+            // console.log(data.data.artist.discography.singles.items.length)
 
             for (var i = 0; i < data.data.artist.discography.singles.items.length; i++) {
                 var song = data.data.artist.discography.singles.items[i].releases.items[0].name
-                console.log(song)
-                songEl1 = $('<li>')
-                songEl1.attr('class', 'btnSong')
+                // console.log(song)
                 songEl2 = $('<button>')
+                songEl2.attr('id', 'songName')
                 songEl2.attr('name', song)
                 songEl2.text(song); 
-                songEl1.append(songEl2)
-                songList.append(songEl1)
+                songList.append(songEl2)
             }
         })
         .catch(err => console.error(err))
@@ -74,7 +76,11 @@ function funcContainer3(event) {
     lastArtistEl.text(localStorage.getItem('lastArtist'));
 }
 
+// $('#songs').on('click', '#songName', (e) => {
+//     let id = $(e.target).attr('name') || $(e.target).closest('#songName').attr('name');
+//     console.log(id);
+//   })
+
 function showArtists(artist) {
 
 }
-

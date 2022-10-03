@@ -1,3 +1,6 @@
+var lastSongEl = $('#last-song');
+lastSongEl.text(localStorage.getItem('lastSong'));
+
 function getLyrics(songTitle) {
     console.log('before', songTitle)
     songTitle = songTitle.toLowerCase()
@@ -22,13 +25,18 @@ function getLyrics(songTitle) {
 	    .catch(function(error) {return console.error(error)})
 };
 
+$('#songs').on('click', '#songName', (e) => {
+    let id = $(e.target).attr('name') || $(e.target).closest('#songName').attr('name');
+    getLyrics(id);
+    var lastSongEl = $('#last-song');
+    localStorage.setItem("lastSong", id);
+    lastSongEl.text(localStorage.getItem('lastSong'));
+  })
 
-// test for the above function
-// getLyrics('Hey Jude')
 
 var track4Lyrics = document.getElementsByClassName('btnSong')
 
-track4Lyrics.addEventListener("click", getLyrics)
+// track4Lyrics.addEventListener("click", getLyrics)
 
 
 // TODO's
