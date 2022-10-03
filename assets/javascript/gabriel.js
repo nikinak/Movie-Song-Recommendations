@@ -32,14 +32,3 @@ $('#songs').on('click', '#songName', (e) => {
     localStorage.setItem("lastSong", id);
     lastSongEl.text(localStorage.getItem('lastSong'));
   })
-
-
-var track4Lyrics = document.getElementsByClassName('btnSong')
-
-// track4Lyrics.addEventListener("click", getLyrics)
-
-
-// TODO's
-// set click event function that will start the getLyrics function when a song is selected from the id='tracks' listed item and adds that song + artist title to local storage
-// (Complete) get lyrics to display in id="lyrics-text"
-// function to display songs and artist on page, recover data from local storeage
