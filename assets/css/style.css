@@ -138,6 +138,9 @@ li {
     color: white;
 }
 
+.list-group-item {
+    color: black;
+}
 
 
 /* media screen adjustemnt for screen resizing */
