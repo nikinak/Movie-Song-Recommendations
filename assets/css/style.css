@@ -96,6 +96,7 @@ h2 {
 
 .card-title {
     font-weight: bolder;
+    padding: 5px;
 }
 
 li {
@@ -108,25 +109,32 @@ li {
 }
 
 .inbetweenwhite {
-    background-color: white;
+    background-color: lightpink;
     padding:5px;
 }
 
 .card-body1 {
     height: 100px;
-    padding: 10px;
+    background-color: lightblue;
 }
 
 .card-body2 {
     height: 100px;
-    padding: 10px;
+    background-color: lightblue;
 }
 .card-text {
     font-weight: 40%;
+    padding: 5px;
 }
 
 .card {
-    border-color: red;
+    padding: 5px 5px 5px 5px ;
+    background-color: lightpink;
+    font-family: sans-serif;
+}
+
+.card2 {
+    padding: 5px 5px 5px 5px ;
     font-family: sans-serif;
 }
 /* formatting for the cards */
