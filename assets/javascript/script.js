@@ -7,6 +7,8 @@ var selectEl = document.getElementById('selectchoices')
 dropdownhide.classList.remove('hide')
 selectEl.addEventListener('change', funcContainer3)
 
+var lastArtistEl = $('#last-artist');
+lastArtistEl.text(localStorage.getItem('lastArtist'));
 
 function funcContainer3(event) {
     // console.log('event', event)
