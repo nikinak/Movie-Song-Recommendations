@@ -1,3 +1,6 @@
+var lastSongEl = $('#last-song');
+lastSongEl.text(localStorage.getItem('lastSong'));
+
 function getLyrics(songTitle) {
     console.log('before', songTitle)
     songTitle = songTitle.toLowerCase()
@@ -22,31 +25,10 @@ function getLyrics(songTitle) {
 	    .catch(function(error) {return console.error(error)})
 };
 
-
-// test for the above function
-// getLyrics('Something')
-
-
-var songButton = document.getElementsByTagName('button')
-console.log(songButton)
-var songChoice = document.getElementsByTagName('button')
-console.log(songChoice)
-var songList = document.getElementById('songs')
-console.log(songList)
-// for (var i = 0; i < songChoice.length; i++) {
-//     var song = songChoice.HTMLCollection[i].button[i]
-//     console.log(song)
-// }
-
-songList.addEventListener("click", getLyrics('Something'))
-
-
-    
-
-
-
-
-// TODO's
-// set click event function that will start the getLyrics function when a song is selected from the id='tracks' listed item and adds that song + artist title to local storage
-// (Complete) get lyrics to display in id="lyrics-text"
-// function to display songs and artist on page, recover data from local storeage
+$('#songs').on('click', '#songName', (e) => {
+    let id = $(e.target).attr('name') || $(e.target).closest('#songName').attr('name');
+    getLyrics(id);
+    var lastSongEl = $('#last-song');
+    localStorage.setItem("lastSong", id);
+    lastSongEl.text(localStorage.getItem('lastSong'));
+  })

@@ -1,6 +1,5 @@
 /* defines formatting as default */
 * {
-    /* background-color: black; */
     font-family: 'Inter Tight', sans-serif;
 }
 
@@ -24,6 +23,10 @@
     display: flex;
     color: white;
     padding-right: 20px;
+}
+
+.blend {
+    color:black;
 }
 
 h1 {
@@ -95,6 +98,10 @@ h2 {
     font-weight: bolder;
 }
 
+li {
+    list-style: none;
+}
+
 .inbetween {
     background-color: black;
     height: 2px;
@@ -131,6 +138,9 @@ h2 {
     color: white;
 }
 
+.list-group-item {
+    color: black;
+}
 
 
 /* media screen adjustemnt for screen resizing */
@@ -169,5 +179,10 @@ h2 {
 
     .spacing {
         height: 40px;
+    }
+
+    .artist {
+        font-size: 10px;
+        margin-top: 40px;
     }
 }

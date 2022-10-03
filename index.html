@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href= './assets/style.css' rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href= './assets/css/style.css' rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@300&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href= './assets/css/style.css' rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="coloring">
@@ -22,16 +21,15 @@
       <p class = "border-white"></p>
     </section> 
       <section class="artist">
-        <p class="lastartist" >Your last searched artist: <span id="last-artist"> Insert Artist</span></p>
-        <p class = "lastartist">Your last searched song: <span> Insert Song</span></p>
+        <p class="lastartist" >Your last searched artist:<span class="blend">_</span><span id="last-artist"></span></p>
+        <p class = "lastartist">Your last searched song:<span class="blend">_</span><span id="last-song"></span></p>
       </section>
     <section>
       <p class = "spacing"></p>
       <p class="start-here" id="start-text">Begin your exploration</p>
-      <p class="start-here hide" id="second-text">You are exploring: <span class ="artist-name"></span></p>
+      <p class="start-here hide" id="second-text">You are exploring: <span id ="artist-name"></span></p>
     </section>
       <form id="displaycontainer2" class="container2" > 
-        <div id= "dropdownchoices' class= "form-group hide">
           <select class="form-control" id="selectchoices">
             <option disabled selected>Choose an Artist</option>
             <option>Adele</option>
@@ -40,19 +38,17 @@
             <option>Lizzo</option>
             <option>Rhianna</option>
           </select>
-        </div>
       </form> 
 
     <div class = "container3 hide row justify-content-around coloring" id = "displaycontainer3"> 
       <div class="card col-12 col-sm-6 col-lg-4 mb-3">
         <div class="card-body">
           <h5 class="card-title">Song List</h5>
-          <p class="card-text">Here are the songs from this artist</p>
+          <p class="card-text">Here are the songs from this artist. Select a song and the lyrics will appear.</p>
         </div>
-      <div class = "inbetween"></div>  
-        <ul class="list-group list-group-flush" id="songs">
-          <li class="list-group-item track-list"></li>
-        </ul>
+        <div class = "inbetween"></div>  
+        <div class="list-group list-group-flush" id="songs">
+        </div>
       </div>
       <div class="card col-12 col-sm-6 col-lg-4 mb-3">
         <div class="card-body">
