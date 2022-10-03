@@ -107,6 +107,20 @@ li {
     height: 2px;
 }
 
+.inbetweenwhite {
+    background-color: white;
+    padding:5px;
+}
+
+.card-body1 {
+    height: 100px;
+    padding: 10px;
+}
+
+.card-body2 {
+    height: 100px;
+    padding: 10px;
+}
 .card-text {
     font-weight: 40%;
 }
